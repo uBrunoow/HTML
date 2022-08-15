@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
 * {
-    margin: 0;
+    margin: 1%;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
@@ -12,33 +12,18 @@ body {
     min-height: 100vh;
 }
 
-div.retangulo { 
-    background-color: red;
-    width: 100%;
-    height: 200;
-    position: absolute
-}
-
-.luffy__image {
-    position: absolute;
+.luffy__image {    
     left: 17%;
-    transform: translate(-63%, 20%);
-    height: 70%;
+    transform: translate(2%, 15%);
+    height: 15%;
+    width: 20%;
+    background-color: white;
 }
 
 .luffy__info {
-    top: 6%;
-    left: 1%;
     background-color: white;
-    box-shadow: -3px 4px 0 red;
-    height: 5%;
-    width: 20%;
-    position: absolute;
-    text-align: justify;
-}
-
-.luffy__nome {
-    color: #000;
-    margin-left: 2%;
-    text-transform: capitalize;
+    transform: translate(2%, 250%);
+    text-align: center;
+    width: 30%;
+    align-items: center;
 }
