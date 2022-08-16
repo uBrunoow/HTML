@@ -16,7 +16,7 @@ body {
     left: 17%;
     transform: translate(2%, 15%);
     height: 15%;
-    width: 20%;
+    width: 30%;
     background-color: white;
 }
 
@@ -26,4 +26,24 @@ body {
     text-align: center;
     width: 30%;
     align-items: center;
+}
+
+.luffy__hist {
+    background-color: white;
+    font-size: 50%;
+    display: flex;
+    width: 1000px;
+    height: 15%;
+    padding: 1%;
+    margin-top: 10%;
+}
+
+.retangulo {
+    background-color: red;
+
+}
+
+.luffy__full {
+    display: grid;
+    grid-template-columns: (2, 1fr);
 }
