@@ -1,0 +1,8 @@
+main {
+    text-align: center;
+    min-height: 10vh;
+    background: linear-gradient(to bottom, rgb(159, 228, 255), #fff);}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
