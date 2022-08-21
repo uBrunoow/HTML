@@ -1,0 +1,16 @@
+body {
+    font: normal 16px Arial, verdana, serif;
+    background-image: linear-gradient(rgb(250, 255, 181), rgb(240, 182, 25));
+    background-attachment:fixed;
+}
+
+h1 { 
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}

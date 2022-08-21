@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(rgb(166, 250, 177), rgb(109, 253, 129));
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(13, 82, 21);
+}
+
+h2 {
+    color: rgb(42, 114, 0);
+}
+
+h1#principal {
+    text-align: center;
+    color: brown;
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    margin: auto;
+    width: 50%;
+    box-shadow: 10px 15px 20px rgb(25, 87, 44);
+}
