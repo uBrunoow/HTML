@@ -1,22 +1,36 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+
 
 body {
-    background-image: linear-gradient(rgb(166, 250, 177), rgb(109, 253, 129));
+    background-image: linear-gradient(#9BE8AF, #73AC82);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: rgb(13, 82, 21);
+    color: #3A9C52;
+    font-family: 'DM Serif Display', serif;
+
 }
 
 h2 {
-    color: rgb(42, 114, 0);
+    color: #82e69b;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
 }
 
 h1#principal {
     text-align: center;
-    color: brown;
+    color: whitesmoke;
+    background-color: #276937;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+
 }
 
 main {
@@ -26,4 +40,21 @@ main {
     margin: auto;
     width: 50%;
     box-shadow: 10px 15px 20px rgb(25, 87, 44);
+}
+
+.basico {
+    color: rgb(97, 97, 255);
+}
+
+.intermediario {
+    color: rgb(179, 190, 24);
+}
+
+.avancado {
+    color: rgb(255, 97, 97);
+}
+
+.texto {
+    text-decoration: underline;
+    color: rgb(97, 97, 255);
 }
