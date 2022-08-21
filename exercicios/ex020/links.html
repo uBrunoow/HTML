@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        .especial::before { 
+            content: '⇒     ';
+        }
+
+        .especial::after {
+            content: '  ⇐';
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>PERSONALIZANDO LINKS</h1>
+    <ul>
+        <li><a href="https://open.spotify.com/?nd=1" target="_blank">Spotify</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">youtube</a></li>
+        <li><a href="https://github.com/" target="_blank">Github</a></li>
+    </ul>
+</body>
+</html>
