@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Mitr-SemiBold;
+    src: url(Mitr-SemiBold.ttf);
+    font-weight: bold;
+  }
+
+  p {
+    font-family: Mitr-SemiBold;
+    font-size: 600px;
+  }
+
