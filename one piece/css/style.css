@@ -1,49 +1,150 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
-    margin: 1%;
-    box-sizing: border-box;
-    font-family: 'Oxanium', cursive;
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
-    background: linear-gradient(to right, rgb(255, 177, 177), #fff);
-    min-height: 100vh;
+    margin: 0px;
 }
 
-.luffy__image {    
-    left: 17%;
-    transform: translate(2%, 15%);
-    height: 15%;
-    width: 30%;
-    background-color: white;
-}
-
-.luffy__info {
-    background-color: white;
-    transform: translate(2%, 250%);
-    text-align: center;
-    width: 30%;
-    align-items: center;
-}
-
-.luffy__hist {
-    background-color: white;
-    font-size: 50%;
+.container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    width: 1000px;
-    height: 15%;
-    padding: 1%;
-    margin-top: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.retangulo {
-    background-color: red;
+.box {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.363);
+}
+
+.fundo {
+    filter: blur(10px);
+    box-shadow: 5px 0px 10px black inset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+}
+
+.cabecalho {
+    float:direita; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img__perfil {
+    float: direita;
+    width: 150px;
+    height: 150px;
+    margin-left: 125px;
+    padding-top: 30px;
+}
+
+.icones__email{ 
+    position: absolute;
+    text-align: left;
+    margin-left: 315px;
+    margin-right: 20px;
+    border-radius: 3px;
+    height: 2.7vh;
+}
+
+.icones__senha{ 
+    position: absolute;
+    text-align: left;
+    margin-left: 315px;
+    margin-right: 20px;
+    border-radius: 3px;
+    height: 2.7vh;
+}
+
+.email {
+    float:direita; 
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+    height: 2.7vh;
+}
+
+.email>input {
+    width: 83.5%;
+    height: 3vh;
+    border: none
+}
+
+.emailine {
+    float:direita;
+    color: black;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 4px;
+}
+
+.senha {
+    float:direita; 
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.senha>input {
+    width: 83.5%;
+    height: 3vh;
+    border: none
+}
+
+.mostrarsenha {
+    float:direita; 
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.buttons{
+    float:direita; 
+    text-align: center;
+    margin-top: 35px;
+}
+
+.button__acessar {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 19vw;
+    height: 5vh;
+    border: none;
+    border-radius: 12px; 
+    background: linear-gradient(to right,#52BAB9, #79D2BE,#61BEB6);
 
 }
 
-.luffy__full {
-    display: grid;
-    grid-template-columns: (2, 1fr);
+.button__acessar:hover {
+    background: linear-gradient(to right,hsla(179, 43%, 53%, 0.400), hsla(167, 50%, 65%, 0.400),hsla(175, 42%, 56%, 0.400));;
+    transition: 0.5s ease-in-out;
+}
+
+.checarcaixa {
+    float:direita; 
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8em;
+}
+
+.rodape {
+    float:direita; 
+    margin-top: 40px;
+    text-align: center;
 }

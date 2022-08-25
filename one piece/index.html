@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--    LINKS   -->
-    <link rel="icon" href="./favicons/favicon-16x16 - Copia.png">
+    <title>Teste de login</title>
     <link rel="stylesheet" href="./css/style.css">
-
-    <title>One Piece</title>
+    <link rel="icon" href="" type="">
 </head>
 <body>
-    <main>
-        <div class = retangulo>
-            <header>ONE PIECE CHARACTERS</header>
+        <img src="./imagens/plaaaaannnnnn.jpg" alt="plano-de-fundo" class="fundo">
+
+    <div class="container">
+        <div class="box">
+
+            <h1 class="cabecalho">Faça seu login</h1>
+
+            <img src="./imagens/d5cc83f4ca6dab8bf49cf83c9801040f.jpg" alt="" class="img__perfil">
+
+            <form action="/email" method="post"></form>
+            <form action="/pagina-processa-dados-do-form" method="post">
+
+                <div class="email">
+                    <label for="nome"> <img src="./imagens/icone-email.png" alt="" class="icones__email">E-mail:</label>
+                    <input type="text" id="email" />
+                    <div class="emailine"><hr></div>
+                    </div>
+
+                <div class="senha">
+                    <label for="senha"><img src="./imagens/senha-icone.png" alt="" class="icones__senha">Senha:</label>
+                    <input type="password" id="senha"><br>
+
+                    <script type="text/javascript" src="./js/script.js"></script>
+
+                    <div class="emailine"><hr></div>
+
+                </div>
+                <div class="mostrarsenha">
+                    <input type="checkbox" onclick="mostrarOcultarSenha()"> Mostrar senha
+                </div>
+            </form>
+
+            <div class="buttons">
+                <button class="button__acessar">Acessar</button>
+            </div>
+
+            <div class="checarcaixa">
+                <input type = "checkbox" id = "remember" name = "remember">
+                <label for = "remember"> Remember me </label>
+            </div>
+
+            <div class="rodape">
+                <h3>Não tem conta? Se inscreva!</h3>
+            </div>
+            
         </div>
-        <section class="luffy__full">
-            <div class = luffy__info>
-                <h1>LUFFY - CAPITÃO</h1>
-            </div>
-            <div class="luffy__hist">
-                <h1>Monkey D. Luffy,também conhecido como Luffy Chapéu de Palha ou Chapéu de Palha,é um pirata e o protagonista do anime e mangá One Piece. Ele é o fundador e o capitão do cada vez mais infame e poderoso Piratas do Chapéu de Palha, bem como um de seus principais lutadores. Seu sonho de vida é se tornar o Rei dos Piratas, encontrando o lendário tesouro deixado pelo falecido Rei dos Piratas, Gol D. Roger. Ele acredita que ser o Rei dos Piratas significa ter a maior liberdade do mundo.
-                Nascido na Vila Foosha, Luffy acidentalmente comeu a Gomu Gomu no Mi aos 7 anos de idade, que deu ao seu corpo propriedades de borracha. Nesta época, Luffy conheceu Shanks, "o Ruivo", que lhe deu seu chapéu de palha como parte de uma promessa para que eles se encontrassem novamente. Luffy é o filho do líder Revolucionário Monkey D. Dragon,neto paterno do herói da Marinha Monkey D. Garp,irmão jurado do falecido "Punhos de Fogo" Portgas D. Ace e do chefe de gabinete Revolucionário Sabo, e filho adotivo de Curly Dadan. Ele é uma das poucas pessoas no mundo que carregam a Vontade de D.</h1>
-            </div>
-            <img src="./imagens/monkey_d__luffy_by_hobbj_de5417b-fullview.png" alt="luffy" class="luffy__image">
-        </section>
+    </div>
+    <div>
         
-    </main>
+        
+    </div>
 </body>
 </html>
