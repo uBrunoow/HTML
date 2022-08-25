@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -27,19 +29,32 @@ body {
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.363);
 }
 
+.logo {
+    display: block;
+    position: absolute;
+    width: 4vw;
+    align-items: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
 .fundo {
-    filter: blur(10px);
+    filter: blur(1px);
     box-shadow: 5px 0px 10px black inset;
     position: absolute;
     height: 100%;
     width: 100%;
     box-shadow: none;
+    opacity: 1px;
 }
 
 .cabecalho {
     float:direita; 
     text-align: center;
     margin-top: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 
 .img__perfil {
@@ -79,9 +94,9 @@ body {
 }
 
 .email>input {
-    width: 83.5%;
+    width: 70%;
     height: 3vh;
-    border: none
+    border: none;
 }
 
 .emailine {
@@ -102,32 +117,26 @@ body {
 }
 
 .senha>input {
-    width: 83.5%;
+    width: 70%;
     height: 3vh;
     border: none
-}
-
-.mostrarsenha {
-    float:direita; 
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1em;
 }
 
 .buttons{
     float:direita; 
     text-align: center;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .button__acessar {
     margin-left: 20px;
     margin-right: 20px;
     width: 19vw;
-    height: 5vh;
+    height: 10vh;
     border: none;
     border-radius: 12px; 
     background: linear-gradient(to right,#52BAB9, #79D2BE,#61BEB6);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.411);
 
 }
 
@@ -138,13 +147,33 @@ body {
 
 .checarcaixa {
     float:direita; 
-    text-align: center;
-    margin-top: 40px;
+    text-align: left;
+    margin-top: 10px;
     font-size: 0.8em;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    gap: 0px;
+}
+
+.checarcaixa>input#remember+label {
+    background-color: black;
 }
 
 .rodape {
     float:direita; 
-    margin-top: 40px;
+    margin-top: 35px;
     text-align: center;
 }
+
+.rodape > h3 {
+    font-size: 0.8em;
+}
+
+.rodape >.subsline {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px ;
+}
+
+@media
