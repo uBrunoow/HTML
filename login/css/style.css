@@ -9,6 +9,12 @@
 }
 body {
     margin: 0px;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/plaaaaannnnnn.jpg);
 }
 
 .container {
@@ -19,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+
 }
 
 .box {
@@ -175,5 +182,3 @@ body {
     margin-right: 50px;
     margin-bottom: 10px ;
 }
-
-@media
