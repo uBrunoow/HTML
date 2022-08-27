@@ -1,17 +1,30 @@
 
 body { 
-    height: 100vh;
+    /**height: 100vh;
     background-color: black;
     background-image: url(https://i.pinimg.com/736x/d5/c8/eb/d5c8ebdfa1eb3ec56d3c284577f3a1c6.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;**/
+
+    /** shorthand - background
+        color
+        image 
+        position 
+        repeat
+        {size{
+        attachment
+    **/
+
+    background: black url(https://i.pinimg.com/736x/d5/c8/eb/d5c8ebdfa1eb3ec56d3c284577f3a1c6.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 main {
     background-color: gray;
     color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid blue;
