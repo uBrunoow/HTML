@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section.texto {
+    line-height: 1.5em;
+    min-width: 320px;
+    font-size: 2em;
+}
+
+section#imagem {
+    background-image: url(./imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+section#imagem>p{
+    max-width:500px;
+    background-color: rgba(0, 0, 0, 0.664);
+    margin-top: 50px;
+} 
+
+section#imagem2 {
+    background-image: url(./imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+section#imagem2>p{
+    max-width:500px;
+    background-color: rgba(0, 0, 0, 0.664);
+    margin-top: 50px;
+} 
+
+section>p {
+    margin: 50px 30px;
+    font-family: var(--fonte3);
+    padding-left: 10px;
+    max-width:500px;
+    line-height: 2em;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+
