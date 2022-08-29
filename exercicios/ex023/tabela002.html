@@ -14,11 +14,18 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color: gray;
+            top: -1px;
         }
 
         thead, tfoot {
@@ -33,6 +40,10 @@
         }
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(211, 211, 211, 0.726);
         }
     </style>
 
