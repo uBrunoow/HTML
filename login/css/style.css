@@ -130,16 +130,17 @@ body {
 }
 
 .buttons{
-    float:direita; 
+    display: flex;
     text-align: center;
     margin-top: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .button__acessar {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 19vw;
-    height: 10vh;
+    text-align: center;
+    width: 90%;
+    height: 7vh;
     border: none;
     border-radius: 12px; 
     background: linear-gradient(to right,#52BAB9, #79D2BE,#61BEB6);
