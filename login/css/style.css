@@ -139,17 +139,21 @@ body {
 .buttons{
     display: flex;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .button__acessar {
+    margin-left: 4.7%;
     text-align: center;
     width: 90%;
-    height: 7vh;
+    height: 50px;
     border: none;
     border-radius: 12px; 
     background: linear-gradient(to right,#52BAB9, #79D2BE,#61BEB6);
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.411);
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
 
 }
 
@@ -162,7 +166,7 @@ body {
 .checarcaixa {
     float:direita; 
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 0.8em;
     margin-left: 20px;
     margin-right: 20px;
