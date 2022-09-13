@@ -7,6 +7,12 @@
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+    --fonte1: 'Roboto';
+    --fonte2: 'Open Sans';
+}
+
 body {
     margin: 0px;
     background-size: cover;
@@ -27,10 +33,10 @@ body {
     position: relative;
 
 }
-
 .box {
+    margin: 1% 0%;
     width: 400px;
-    height: 600px;
+    height: 550px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.363);
@@ -62,6 +68,7 @@ body {
     margin-top: 30px;
     font-family: 'Roboto';
     font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
 }
 
 .img__perfil {
@@ -132,13 +139,16 @@ body {
 .buttons{
     float:direita; 
     text-align: center;
-    margin-top: 40px;
+    margin-top: 29px;
 }
 
 .button__acessar {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 19vw;
+    margin-top: -20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: relative;
+    margin: auto;
+    width: 90%;
     height: 10vh;
     border: none;
     border-radius: 12px; 
@@ -148,23 +158,20 @@ body {
 }
 
 .button__acessar:hover {
-    background: linear-gradient(to right,hsla(179, 43%, 53%, 0.400), hsla(167, 50%, 65%, 0.400),hsla(175, 42%, 56%, 0.400));;
+    background: linear-gradient(to right,hsla(179, 43%, 53%, 0.400), hsla(167, 50%, 65%, 0.400),hsla(175, 42%, 56%, 0.400));
     transition: 0.5s ease-in-out;
+    color: gray;
 }
 
 .checarcaixa {
     float:direita; 
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     font-size: 0.8em;
     margin-left: 20px;
     margin-right: 20px;
     padding-right: 20px;
     gap: 0px;
-}
-
-.checarcaixa>input#remember+label {
-    background-color: black;
 }
 
 .rodape {
@@ -181,4 +188,15 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px ;
+}
+
+.rodape > h3 > a {
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.rodape > h3 > a:hover{
+    text-decoration: underline;
+    color: gray;
 }
