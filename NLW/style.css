@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagens/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+/** .box {
+    margin: 1% 0%;
+    width: 610px;
+    height: 272px;
+    background-image: linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
+    color: white;
+    position: relative;
+} **/
+
+.rgb {
+    width: 550px;
+    height: 230px;
+    background-color: #2A2634;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
+    color: white;
+    padding: 5%;
+}
+
+.rgb > p {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: rgba(255, 255, 255, 0.445);
+    font-weight: 100;
+} 
+
+.jogo {
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 0.8%;
+}
+
+/**.box2 {
+    width: 610px;
+    height: 272px;
+    background-image: linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
+    color: white;
+}**/
+
+.rgb2 {
+    width: 550px;
+    height: 200px;
+    background-color: #2A2634;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
+    color: white;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.rgb2 > p {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: rgba(255, 255, 255, 0.445);
+    font-weight: 100;
+} 
+
+.streamer {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0.8%;
+    border-radius: 100%;
+}
+
+.rgb3 {
+    width: 550px;
+    height: 180px;
+    background-color: #2A2634;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
+    color: white;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.rgb3 > p {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: rgba(255, 255, 255, 0.445);
+    font-weight: 100;
+} 
+
+.rede {
+    width: 50px;
+    height: 50px;
+    margin: 0.8%;
+}
