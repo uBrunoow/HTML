@@ -16,9 +16,16 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: black;
+    
 }
 
-.container {
+
+
+/**
+    background-image: linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+**/
+
+section.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -28,25 +35,35 @@ body {
     position: relative;
 
 }
-/** .box {
-    margin: 1% 0%;
-    width: 610px;
-    height: 272px;
-    background-image: linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
-    color: white;
-    position: relative;
-} **/
 
-.rgb {
-    width: 550px;
-    height: 230px;
+#div1 {
+    width: 300px;
+    height: 400px;
+    background-image: url(./imagens/luffy\ icon.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-165%,-93%);
+}
+
+section.rgb , .rgb2, .rgb3 {
+    margin-top: 20px;
+    margin-left: 330px;
+    width: 580px;
+    height: 155px;
     background-color: #2A2634;
     border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
     color: white;
-    padding: 5%;
+    padding-top: 24px;
+    padding: 32px;
+}
+
+section.rgb {
+    width: 580px;
+    height: 215px;
 }
 
 .rgb > p {
@@ -60,28 +77,68 @@ body {
     width: 100px;
     height: 130px;
     border-radius: 10px;
-    margin: 0.8%;
+    margin-top: 20px;
+
+}
+
+.jogo:hover{
+    transform: scale(1.1);
+    
+}
+
+#mine {
+    margin-left: 20px;   
+
+}
+#gen {
+    margin-left: 20px;   
+
+}
+
+#vava {
+    margin-left: 20px;   
+}
+
+div.fundo1 {
+    width: 635px;
+    padding: 4px;
+    background-image:  linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+    left: 50%;
+    top: 50%;
+    transform: translate(-5%,-380%);
+    border-radius: 10px;
+    transition: transform .3s; /*vai aplicar a transição de baixo em um tempo de 0.3 segundos*/
+}
+
+div.fundo2 {
+    width: 635px;
+    padding: 4px;
+    background-image:  linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+    left: 50%;
+    top: 50%;
+    transform: translate(-5%,-380%);
+    border-radius: 10px;
+}
+
+div.fundo3 {
+    width: 293px;
+    padding: 4px;
+    background-image:  linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
+    left: 50%;
+    top: 50%;
+    transform: translate(-10%,-380%);
+    border-radius: 10px;
 }
 
 /**.box2 {
-    width: 610px;
-    height: 272px;
-    background-image: linear-gradient(to right ,#F088F2,#9704BF,#6E038C,#460259,#FC75BC);
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
-    color: white;
+    
 }**/
 
-.rgb2 {
-    width: 550px;
-    height: 200px;
-    background-color: #2A2634;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
-    color: white;
-    padding: 5%;
-    margin-top: 5%;
+section.rgb2 {
+    width: 580px;
+    height: 185px;
 }
+
 
 .rgb2 > p {
     margin-top: 1%;
@@ -91,22 +148,24 @@ body {
 } 
 
 .streamer {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
     margin: 0.8%;
     border-radius: 100%;
+    margin-top: 20px;
+}
+
+.streamer:hover {
+    transform: scale(1.2);
 }
 
 .rgb3 {
-    width: 550px;
-    height: 180px;
-    background-color: #2A2634;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.363);
-    color: white;
-    padding: 5%;
-    margin-top: 5%;
+    width: 240px;
+    height: 135px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-112%, -110%);
 }
 
 .rgb3 > p {
@@ -117,7 +176,39 @@ body {
 } 
 
 .rede {
-    width: 50px;
-    height: 50px;
-    margin: 0.8%;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+
+}
+
+.insta {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 30px;   
+}
+
+@keyframes fromTop { /* da início na animação e "fromTop" é o nome que eu dei */
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

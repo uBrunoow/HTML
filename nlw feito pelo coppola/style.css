@@ -1,0 +1,163 @@
+/*Isso aqui formata os css do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tira as bolinhas da lista padrão do html*/
+ul {
+    list-style: none;
+}
+
+/*Configuração da imagem de fundo, deixando ela centralizada e no topo, 
+100% do seu tamanho,
+sem repetição,
+e com a cor de fundo de quando a imagem acabar*/
+body {
+    background-image: url(bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+/*Fonte de todas as letras inseridas no body*/
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+header{
+    margin-top: 32px;
+    height: calc(120px + 32px); /* fazer com que o cabeçalho seja respeitado e a imagem da animação não comece no topo da página*/
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg,#9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+    border-radius: 50%;
+
+    display: flex; /* coloca no meio */
+    padding: 4px;
+
+    transition: transform .3s; /*vai aplicar a transição de baixo em um tempo de 0.3 segundos*/
+}
+
+header div:hover { /*quando eu passar o mouse em cima da div ela vai aplicar as propriedades que tem aqui dentro*/
+    transform: scale(1.2);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%; /*deixa arredondado*/
+}
+
+main {
+    max-width: 580px; /*Largura máxima*/
+    width: 90%; /*largura vai até 90% da extremidade da tela*/
+    margin: auto; /*margem automática*/
+
+    display: flex;
+    flex-direction: column; 
+    gap: 24px;
+
+    margin-top: 10px;
+}
+
+section { /*Section é a caixa de trás, o div está dentro da section*/
+    color: white; 
+    background-image: linear-gradient(90deg,#9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); /*Cores da borda da section*/
+    padding-top: 4px; /*puxa o section pra cima do div*/
+    border-radius: 10px; /*borda arredondada*/
+}
+
+section div { /*caixa dentro da section (div)*/
+    background-color: #2A2634; /*cor da caixa*/
+    padding: 32px; /*distância da borda*/
+    padding-top: 24px;
+    border-radius: 8px; /*borda arredondada */
+}
+
+section h2 { /*Especificação do h2 (títulos)*/
+    letter-spacing: -0.47px;
+}
+
+section p { /*Especificação do p (textos)*/
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+section ul li { /*vai aplicar a transição de baixo em um tempo de 0.3 segundos*/
+    transition: transform .3s;
+}
+
+section ul li:hover{ /*quando eu passar o mouse em cima da div ela vai aplicar as propriedades que tem aqui dentro*/
+    transform: scale(1.1);
+}
+
+.games-list img { /*configuração da imagem dentro da div de games list*/
+    border-radius: 8px;/*borda arredondada*/
+    width: 90px; /*largura*/
+}
+
+.channel-list img { /*configuração da imagem dentro da div de games channel*/
+    border-radius: 50%; /*borda arredondada */
+    width: 70px; /*largura*/  
+    border: 1px solid #443E54; 
+}
+
+/* ANIMAÇÃO */
+
+header div {
+    animation: fromTop .7s/*tempo de animação*/ .2s/*delay*/ backwards /*faz as propriedades de baixo serem puxadas pra cá*/;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) { /*pega o filho número 1 do section dentro de main*/
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .3s;
+}
+
+main section:nth-child(3){
+    animation-delay: .6s;
+}
+
+@keyframes fromTop { /* da início na animação e "fromTop" é o nome que eu dei */
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
