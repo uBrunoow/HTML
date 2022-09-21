@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest"> Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Regiao sudeste">
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">Sao paulo</option>
+                    <option value="RS">Rio grande do sul</option>
+                </optgroup>
+
+                <optgroup label="Regiao sul">
+                    <option value="MG">Minas gerais</option>
+                    <option value="SC">Santa catarina</option>
+                    <option value="PR">Parana</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof"> Profissao </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administracao</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+
+            </datalist>    
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
