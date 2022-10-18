@@ -4,8 +4,8 @@
 
 body {
     background-image: url(../cev-portrait.jpg);
-    background-position: left bottom;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
