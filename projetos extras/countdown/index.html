@@ -5,59 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Countdown</title>
 </head>
+
+    <style>
+
+    </style>
 <body>
     <h1>COUNTDOWN</h1>
-    <div class="wrapper">
-        <div class="count-wrapper">
-            <div id="days">00</div>
+
+    <div class="countdown-container">
+        
+        <div class="countdown-el days-c">
+            <p class="text" id="days">00</p>
             <span>Dias</span>
         </div>
 
-        <div class="count-wrapper">
-            <div id="hours">00</div>
+        <div class="countdown-el hours-c">
+            <p class="text" id="hours">00</p>
             <span>Horas</span>
         </div>
 
-        <div class="count-wrapper">
-            <div id="min">00</div>
-            <span>Minutos</span>
+        <div class="countdown-el mins-c">
+            <p class="text" id="mins">00</p>
+            <span>Mins</span>
         </div>
 
-        <div class="count-wrapper">
-            <div id="sec">00</div>
+        <div class="countdown-el secs-c">
+            <p class="text" id="secs">00</p>
             <span>Segundos</span>
         </div>
     </div>
-
-    <script type="text/javascript">
-        let to= new Date('feb 28 2023 09:50:30');
-    function update(){
-        let from=new Date();
-            diff=to-from;
-            if(diff>0){
-                let days=setTwoDigit(math.floor(diff/1000/60/60/24))
-                hours=setTwoDigit(math.floor(diff/1000/60/60)%24)
-                min=setTwoDigit(math.floor(diff/1000/60)%60)
-                sec=setTwoDigit(math.floor(diff/1000)%60)
-                document.querySelector('#days').InnerText=days
-                document.querySelector('#hours').InnerText=hours
-                document.querySelector('#min').InnerText=min
-                document.querySelector('#sec').InnerText=sec
-            }else{
-                clearInterval(interval);
-                document.querySelector('body').classList.add('alert')
-            }
-    }
-    
-    let interval=setInterval(update,1000)
-    
-    function setTwoDigit(argument) {
-        return argument>9?argument:'0'+argument 
-    }
-    </script>
-
 </body>
+    <script>
+
+    </script>
 
 </html>

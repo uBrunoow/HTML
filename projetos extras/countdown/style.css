@@ -21,12 +21,14 @@ h1 {
     font-weight: 600;
 }
 
-.wrapper   {
+.countdown-container   {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
-.count-wrapper  {
+.count-wrapper{
     width: 140px;
     height: 140px;
     background: #fff;
@@ -37,29 +39,19 @@ h1 {
     flex-direction: column;
 }
 
-.count-wrapper div {
+.text {
     font-weight: 900;
     font-size: 4rem;
     color: #999;
-    margin: 0 .6rem ;
+    background: #fff;
+    padding: 50px;
 }
 
-.count-wrapper span {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    margin-bottom: -100px;
-    padding: .2rem 0;
-}
-
-.alert {
-    animation: alert 1s linear infinite alternate;
-}
-@keyframes alert{
-    0%{
-        background: #112;
-    }
-    100%{
-        background: #a11;
-    }
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    font-size: 1rem;
+    padding: 5px;
 }
