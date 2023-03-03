@@ -4,7 +4,7 @@ const minsEl = document.getElementById("mins");
 const secsEl = document.getElementById("secs");
 const dataEl = document.getElementById("data")
 
-const newYears = '7 Mar 2023';
+const newYears = '11 June 2023';
 
 function countdown() {
 
