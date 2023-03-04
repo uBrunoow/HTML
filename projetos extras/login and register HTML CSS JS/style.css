@@ -91,15 +91,25 @@ header {
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.555);
     border: 2px solid rgba(255, 255, 255, -5);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgb(7, 0, 73);
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #fff;
+}
+
+.wrapper:hover {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .wrapper .form-box {
