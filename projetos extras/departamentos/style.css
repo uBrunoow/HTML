@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f0f075;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 100px 100px 0px 100px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+
+hr {
+    margin: 30px 20% 64px 20%;
+}
+
+.departamentos{ 
+    display: flex;
+    margin-left: 680px;
+}
+
+/* 1 DEPARTAMENTO */
+.primeiro_departamento {
+    transform: translateY(2px);
+}
+
+.autocenter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 535px;
+    border-radius: 17px 0px 0px 17px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/1autocenter.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-right: 25px;
+    transition: all .2s ease-in-out;
+
+}
+
+.autocenter:hover {
+    width: 340px;
+    height: 535px;
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+
+.autocenter p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* 2 DEPARTAMENTO */
+.segundo_departamento {
+    transform: translateY(2px);
+}
+
+.construcao-civil {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 290px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/2contrucao\ civil.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+
+}
+
+.construcao-civil p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+.construcao-civil:hover {
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+/* 3 DEPARTAMENTO */
+
+.terceiro_departamento {
+    margin-top: 315px;
+    transform: translateX(-340px);
+}
+.mercenaria {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 222px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/3mercenaria.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+
+}
+
+.mercenaria p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+.mercenaria:hover {
+
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+/* 4 DEPARTAMENTO */
+.quarto_departamento {
+    transform: translateX(-340px);
+}
+
+.movimentacao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 537px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/4movimentacao.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-right: 25px;
+    margin-left: 25px;
+    transition: all .2s ease-in-out;
+
+}
+
+.movimentacao p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.movimentacao:hover {
+    width: 340px;
+    height: 535px;
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+
+/* 5 DEPARTAMENTO */
+.quinto_departamento {
+    transform: translateX(-340px);
+    margin-top: 2px;
+}
+.bancadas {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 222px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/5bancadas.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+
+}
+
+.bancadas p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.bancadas:hover {
+
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+/* 6 DEPARTAMENTO */
+.sexto_departamento {
+    transform: translateX(-680px);
+    margin-top: 247px;
+}
+.pedestais {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 290px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/6pedestais.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+
+}
+
+.pedestais p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.pedestais:hover {
+    transform: scale(1.1);
+    opacity: .9;
+
+}
+/* 7 DEPARTAMENTO */
+.setimo_departamento {
+    transform: translateX(-680px);
+}
+.motores {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 340px;
+    height: 537px;
+    border-radius: 0px 17px 17px 0px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff49 50%, #000000e5 90%), url(./img/7motores.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-left: 25px;
+    transition: all .2s ease-in-out;
+
+}
+
+.motores p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.motores:hover {
+    width: 340px;
+    height: 535px;
+    transform: scale(1.1);
+    opacity: .9;
+
+}

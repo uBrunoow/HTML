@@ -65,16 +65,14 @@ body {
     display: flex;
     width: 70px;
     height: 70px;
-    background: #9B2324;
+    background: rgb(155, 35, 36);
     border-radius: 0px 17px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     justify-content: center;
     align-items: center;
 }
-
-.md.hydrated {
+.img-gods.expand {
     display: none;
-    transition: .5s;
 }
 
 .imagem {
@@ -101,7 +99,7 @@ body {
 .informacoes h3 {
     position: absolute;
     top: 305px;
-    color: #979797;
+    color: rgb(151, 151, 151);
     text-decoration: line-through;
     font-weight: 100;
 }

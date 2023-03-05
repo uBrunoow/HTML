@@ -35,13 +35,13 @@
     display: none;
 }
 
-.segundo-produto:hover .md.hydrated {
+.segundo-produto:hover .img-gods.expand {
     display: block;
     width: 50px;
     height: 50px;
     position: absolute;
     top: 20px;
-    left: 510px;
+    left:545px;
 }
 
 .segundo-produto:hover .imagem {
