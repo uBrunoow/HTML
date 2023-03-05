@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .produtos {
@@ -57,7 +58,7 @@ body {
     justify-content: right;
     align-items: center;
     padding: 10px 10px 0px 0px;
-
+    transition: .5s;
 }
 
 .promo div {
@@ -69,6 +70,11 @@ body {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     justify-content: center;
     align-items: center;
+}
+
+.md.hydrated {
+    display: none;
+    transition: .5s;
 }
 
 .imagem {
@@ -144,44 +150,5 @@ body {
 
 .comprar a {
     display: none;
-    transition: .7s;
+    transition: .1s;
 }
-
-button:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #9B2324;
-    width: 423px;
-    border-radius: 8px 0px 8px 8px;
-    border: none;
-    box-shadow: 00px -5px 20px rgba(0, 0, 0, 0.171);
-}
-
-button:hover img {
-    transform: translateX(-30px);
-}
-
-button:hover a {
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-/* .primeiro-produto:hover .produtos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(100px);
-}
-
-.primeiro-produto:hover .primeiro-produto {
-    width: 423px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 00px 5px 20px rgba(0, 0, 0, 0.171);
-    margin-right: 70px;
-} */

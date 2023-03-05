@@ -1,0 +1,106 @@
+/**TERCEIRO PRODUTO HOVER**/
+.terceiro-produto:hover .produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(100px);
+}
+
+.terceiro-produto:hover .terceiro-produto {
+    width: 423px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 00px 5px 20px rgba(0, 0, 0, 0.171);
+    margin-right: 70px;
+}
+.terceiro-produto:hover .promo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 10px 0px 0px;
+
+}
+.terceiro-produto:hover .promo div {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 0px 17px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.terceiro-produto:hover .promo img {
+    display: none;
+}
+
+.terceiro-produto:hover .md.hydrated {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 1010px;
+}
+
+.terceiro-produto:hover .imagem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.terceiro-produto:hover .informacoes {
+    margin: 15px 0px 0px 30px;
+}
+
+.terceiro-produto:hover .informacoes h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39px;
+    color: #DB4437;
+    margin-top: 30px;
+}
+
+.terceiro-produto:hover .informacoes h3 {
+    position: absolute;
+    top: 305px;
+    color: #979797;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+.terceiro-produto:hover .informacoes p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    height: 10px;
+    padding-right: 10px;
+}
+.terceiro-produto:hover .informacoes div{
+    margin-top: 5px;
+}
+.terceiro-produto:hover button {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9B2324;
+    width: 423px;
+    border-radius: 8px 0px 8px 8px;
+    border: none;
+    box-shadow: 00px -5px 20px rgba(0, 0, 0, 0.171);
+}
+.terceiro-produto:hover button img {
+        transform: translateX(-30px);
+}
+
+.terceiro-produto:hover button a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 10px;
+}
