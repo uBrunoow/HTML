@@ -8,11 +8,12 @@ body {
     background: #f0f0f075;
 }
 
-.container {
+.container2 {
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin-left: 440px;
 }
 
 h2 {
@@ -30,13 +31,11 @@ hr {
 }
 
 .departamentos{ 
-    display: flex;
-    margin-left: 680px;
 }
 
 /* 1 DEPARTAMENTO */
 .primeiro_departamento {
-    transform: translateY(2px);
+    transform: translateX(-943px);
 }
 
 .autocenter {
@@ -74,7 +73,8 @@ hr {
 
 /* 2 DEPARTAMENTO */
 .segundo_departamento {
-    transform: translateY(2px);
+    transform: translateX(-570px);
+    margin-top: -535px;
 }
 
 .construcao-civil {
@@ -109,9 +109,10 @@ hr {
 /* 3 DEPARTAMENTO */
 
 .terceiro_departamento {
-    margin-top: 315px;
-    transform: translateX(-340px);
+    margin-top: 23px;
+    transform: translateX(-570px);
 }
+
 .mercenaria {
     display: flex;
     justify-content: flex-end;
@@ -144,7 +145,8 @@ hr {
 }
 /* 4 DEPARTAMENTO */
 .quarto_departamento {
-    transform: translateX(-340px);
+    transform: translateX(-222px);
+    margin-top: -537px;
 }
 
 .movimentacao {
@@ -182,9 +184,10 @@ hr {
 
 /* 5 DEPARTAMENTO */
 .quinto_departamento {
-    transform: translateX(-340px);
-    margin-top: 2px;
+    transform: translateX(175px);
+    margin-top: -537px;
 }
+
 .bancadas {
     display: flex;
     justify-content: flex-end;
@@ -216,9 +219,10 @@ hr {
 }
 /* 6 DEPARTAMENTO */
 .sexto_departamento {
-    transform: translateX(-680px);
-    margin-top: 247px;
+    transform: translateX(175px);
+    margin-top: 24px;
 }
+
 .pedestais {
     display: flex;
     justify-content: flex-end;
@@ -249,7 +253,8 @@ hr {
 }
 /* 7 DEPARTAMENTO */
 .setimo_departamento {
-    transform: translateX(-680px);
+    transform: translateX(523px);
+    margin-top: -537px;
 }
 .motores {
     display: flex;
