@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.news {
+    background: #A45214;
+    padding: 20px;
+}
+
+.news .texto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 0px;
+}
+
+.news h1 {
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 170px;
+}
+
+.news span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.input-box{
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: -105px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+}
+
+.input-box::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    background: #FF7A00;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 150px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #FF7A00;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 0px 20px 0px;
+}
+
+li { 
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffc997;
+    text-decoration: underline;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    transition: all .3s ease-out;
+}
+
+.icon {
+    width: 23px;
+    height: 23px;
+}
+
+.box .btn:hover {
+    transform: scale(1.2);
+    background: #A45214;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.marcaregistrada {
+    padding: 10px;
+    background-color: #A45214;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}   
