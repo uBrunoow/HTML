@@ -4,11 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    padding: 50px;
-    width: 100vw;
-    height: 100vh;
-}
+
 
 .container {
     height: 100%;
@@ -19,11 +15,36 @@ body {
 
   ul {
     display: none;
+    transition: all .5s ease-in-out;
   }
-  
-  a {
+
+  li h1{ 
     color: #fff;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  li a {
+    transition: all .5 ease-out;
+    margin-left: 40px;
+  }
+
+.links  {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+  a {
+    color: #FFFFFF;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: #FFA14A;
   }
   
   #checkbox-menu {
@@ -31,39 +52,45 @@ body {
   }
 
   #checkbox-menu:checked ~ ul {
-    background: red;
+    background: #000;
     display: block;
-    width: 200px;
+    width: 380px;
     height: 100vh;
-    margin-top: 10px;
+    margin-top: -70px;
     margin-right: 100px;
+    backdrop-filter: blur (100px);
   }
 
-  #checkbox-menu:checked #checkbox-menu {
-    right: 100px;
-    position: relative;
-
+  #checkbox-menu:checked+  label span{
+    margin-left: 400px;
+    background: #000;
   }
 
+  #checkbox-menu:checked + body {
+    background: url(https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-blue-stock-official-2880x1800-5630.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-
-  
   label {
     cursor: pointer;
     position: relative;
     display: block;
-    height: 22px;
-    width: 45px;
+    height: 50px;
+    width: 380px;
   }
   
   label span {
     position: absolute;
     display: block;
-    height: 5px;
-    width: 100%;
+    height: 6px;
+    width: 50px;
     border-radius: 30px;
-    background: #000;
+    background: rgb(0, 0, 0);
     transition: .2s ease-in-out;
+    margin-top: 15px;
+    margin-left: 60px;
   }
   
   label span:nth-child(1) {
@@ -90,4 +117,84 @@ body {
   #checkbox-menu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
+  }
+
+  .imagens {
+    width: 28px;
+    margin-right: 35px;
+    margin-left: -35px;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-top:-28px
+  }
+
+  .titulo_menu {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .titulo_menu img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+  .titulo_menu h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .infos {
+    margin-top: 20px;
+  }
+
+  hr {
+    width: 350px;
+    margin-top: 10px;
+  }
+  .login-cadastro {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row; 
+  }
+
+  .login-cadastro button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .2s ease-out;
+    width: 185px;
+    margin-right: 11px;
+    margin-left: 10px;
+    height: 50px;
+}
+
+  .enviar {
+    border-radius: 5px ;
+    background: #ff7a00;
+    cursor: pointer;
+  }
+
+  .enviar:hover {
+    background: #FFA14A;
+  }
+
+
+  .cadastro {
+    background: #ff7a00;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cadastro:hover{
+    background: #FFA14A;
   }
