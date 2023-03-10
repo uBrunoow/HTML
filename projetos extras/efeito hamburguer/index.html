@@ -5,38 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Efeito hamburguer</title>
 </head>
 <body>
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul type="none">
-            <div class="titulo_menu">
-                <img src="person-circle.svg" alt="" class="img">
-                <h1>Olá. <br> Faça  seu login</h1>
-            </div>
-            <div class="login-cadastro">
-                <button type="submit" class="enviar">
-                    LOGIN
-                </button>
-                <button type="submit" class="cadastro">
-                    CADASTRE-SE
-                </button>
-            </div>
-            <div class="infos">
-                <li class="links">  <a href=""> <img src="happy.svg" alt="" class="imagens"> <p>Minha conta</p></a></li>
-                <li class="links">  <a href=""> <img src="bag-handle.svg" alt="" class="imagens"><p>Meus pedidos</p></a></a></li>
-                <li class="links">  <a href=""> <img src="person.svg" alt="" class="imagens"><p>Meus dados</p></a></li>
-                <li class="links">  <a href=""> <img src="heart (1).svg" alt="" class="imagens"><p>Favoritos</p></a></li>
-                <li class="links">  <a href=""> <img src="apps.svg" alt="" class="imagens"><p>Departamentos</p></a></li>
-                <li class="links">  <a href=""> <img src="flash.svg" alt="" class="imagens"><p>Novidades</p></a></li>
-                <li class="links">  <a href=""> <img src="information-circle.svg" alt="" class="imagens"><p>Sobre a instituição</p></a></li>
-            </div>
-        </ul>
+    <header>
+        <nav>
+          <div class="container">
+          <input type="checkbox" id="checkbox-menu" onclick="clickMenu()">
+          <label for="checkbox-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              </label> 
+          </div>
+          <div open class="block"></div>
+          <menu id="itens">
+              <ul type="none">
+                <div class="titulo_menu">
+                    <img src="person-circle.svg" alt="" class="img">
+                    <h1>Olá. <br> Faça  seu login</h1>
+                </div>
+                <div class="login-cadastro">
+                    <button type="submit" class="enviar">
+                        LOGIN
+                    </button>
+                    <button type="submit" class="cadastro">
+                        CADASTRE-SE
+                    </button>
+                </div>
+                <div class="infos">
+                    <li class="links">  <a href=""> <img src="happy.svg" alt="" class="imagens"> <p>Minha conta</p></a></li>
+                    <li class="links">  <a href=""> <img src="bag-handle.svg" alt="" class="imagens"><p>Meus pedidos</p></a></a></li>
+                    <li class="links">  <a href=""> <img src="person.svg" alt="" class="imagens"><p>Meus dados</p></a></li>
+                    <li class="links">  <a href=""> <img src="heart (1).svg" alt="" class="imagens"><p>Favoritos</p></a></li>
+                    <li class="links">  <a href=""> <img src="apps.svg" alt="" class="imagens"><p>Departamentos</p></a></li>
+                    <li class="links">  <a href=""> <img src="flash.svg" alt="" class="imagens"><p>Novidades</p></a></li>
+                    <li class="links">  <a href=""> <img src="information-circle.svg" alt="" class="imagens"><p>Sobre a instituição</p></a></li>
+                </div>
+                      </ul>
+          </menu>
+
+          <div id="divBusca" >
+              <input type="text" id="txtBusca" placeholder="Pesquisar...">
+              <button class="imgPesquisa"> <a href=""> <ion-icon name="search-outline"></ion-icon></a></button>
+              <button class="imgConta"> <a href=""><ion-icon name="person-outline"></ion-icon></a> </button>
+              <button class="imgFavoritos"> <a href=""><ion-icon name="heart-outline"></ion-icon></a></button>
+              <button class="imgCarrinho"> <a href=""><ion-icon name="cart-outline"></ion-icon></a> </button>
+          </div>  
+        </nav>
+      </header>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
