@@ -16,7 +16,7 @@ header {
     background-color: rgb(255, 123, 123);
 }
 
-header > h1 {
+header h1 {
     text-align: center;
 }
 
