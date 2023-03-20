@@ -10,12 +10,25 @@
 
      menu li  {
       width: 100%;
-      display: none;
-     }
+      background: var(--cor2);
+      padding: 10px 0px;     
+    }
+
+    menu li:hover {
+        background: var(--cor4);
+    }
 
      ul {
       width: 100%;
      }
+
+
+     #itens {
+        gap: 00px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      }
 
     article {
         display: flex;
