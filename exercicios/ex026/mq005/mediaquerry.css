@@ -1,0 +1,48 @@
+@media screen and (max-width:768px) {
+
+    :root {
+        --cor1: #023059;
+        --cor2: #0455BF;
+        --cor3: #0476D9;
+        --cor4: #0487D9;
+        --cor5: #F2E0D5;
+     }
+
+     menu li  {
+      width: 100%;
+      background: var(--cor2);
+      padding: 10px 0px;     
+    }
+
+    menu li:hover {
+        background: var(--cor4);
+    }
+
+     ul {
+      width: 100%;
+     }
+
+
+     #itens {
+        gap: 00px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      }
+
+    article {
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        background: var(--cor4);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+
+   
+  
+  }
