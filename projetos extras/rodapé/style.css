@@ -4,8 +4,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
 .news {
-    background: #A45214;
+    background: var(--cor4);
     padding: 20px;
 }
 
@@ -57,7 +65,7 @@
 .btn {
     height: 50px;
     width: 200px;
-    background: #FF7A00;
+    background: var(--cor2);
     color: #fff;
     border: none;
     outline: none;
@@ -68,7 +76,7 @@
     text-align: center;
     margin-left: 150px;    
     cursor: pointer;
-    box-shadow: -4px 4px 0 #61310c;
+    box-shadow: -4px 4px 0 #001038;
 
 }
 
@@ -79,7 +87,7 @@
 }
 
 .rodape {
-    background-color: #FF7A00;
+    background-color: var(--cor1);
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -106,7 +114,7 @@ a {
 }
 
 a:hover {
-    color: #ffc997;
+    color: var(--cor5);
     text-decoration: underline;
 }
 
@@ -140,15 +148,15 @@ a:hover {
 }
 
 .box .btn:hover {
-    transform: scale(1.2);
-    background: #A45214;
+    transform: scale(1.1);
+    background: var(--cor4);
     border: 1px solid #fff;
     box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
 }
 
 .marcaregistrada {
     padding: 10px;
-    background-color: #A45214;
+    background-color: var(--cor4);
     text-align: center;
     color: #fff;
     font-size: 13px;
