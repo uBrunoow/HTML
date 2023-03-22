@@ -81,7 +81,7 @@
 }
 
 .btn:active {
-    box-shadow:  4px -4px 0 #61310c ;
+    box-shadow: inset -4px 4px 0 #001038 ;
     font-size: 22px;
     border-radius: 5px;
 }
@@ -98,6 +98,7 @@
     font-weight: bold;
     font-size: 20px;
     margin: 30px 0px 20px 0px;
+    cursor: default;
 }
 
 li { 
@@ -114,8 +115,7 @@ a {
 }
 
 a:hover {
-    color: var(--cor5);
-    text-decoration: underline;
+    color: #4faaff;
 }
 
 .box {
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .btn {
-    transition: all .1s ease-out;
+    transition: all .2s ease-out;
 }
 
 .icon {
@@ -148,9 +148,9 @@ a:hover {
 }
 
 .box .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     background: var(--cor4);
-    border: 1px solid #fff;
+    outline: 1px solid #fff;
     box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
 }
 
