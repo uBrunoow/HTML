@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquerry.css">
     <script src="script.js" type="text/javascript" defer></script>
@@ -12,12 +13,16 @@
 
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
 
         <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
         <ul>
             <menu id="itens">
+            
                 <li type="none" ><a href="https://www.vocesabia.net/">Opção 1</a></li>
                 <li type="none" ><a href="">Opção 2</a></li>
                 <li type="none" ><a href="">Opção 3</a></li>
@@ -40,5 +45,15 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim odit assumenda earum harum exercitationem inventore quae, illo rem tempora, eligendi sapiente officiis rerum porro! Perspiciatis, similique a! Enim, autem rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas optio voluptates dolores tempore reiciendis officiis debitis impedit quasi doloremque adipisci nobis itaque aut neque cum esse dolorum, expedita placeat sint! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum necessitatibus quasi consequuntur, nobis deleniti cumque fugiat, nam fugit dignissimos pariatur ducimus totam corrupti, recusandae cum quia fuga accusamus a doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolor perferendis officiis nemo natus repellendus tempore atque, sint nostrum est libero laudantium neque alias voluptas. Necessitatibus architecto aliquid veritatis hic!</p>
         </article>
     </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

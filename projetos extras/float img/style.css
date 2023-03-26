@@ -14,6 +14,7 @@ body {
 img {
     width: 500px;
     animation: float 3s ease-in-out infinite;
+    animation: animate 4s linear infinite;
 }
 
 @keyframes float {
@@ -22,5 +23,16 @@ img {
     }
     50% {
         transform: translateY(-50px);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+
     }
 }
