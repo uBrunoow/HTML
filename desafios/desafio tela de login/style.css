@@ -1,0 +1,110 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+  }
+
+  body ,html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #993399;
+  }
+
+  .login {
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 90vh;
+  }
+
+  h1 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .imagem {
+    width: 100%;
+    height: 300px;
+    background-image: url(https://media.alvanista.com/uploads/timeline_image/2016/10/20/354787_2545907250.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px 10px 0 0 ;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #993399;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  label span {
+    margin: 10px;
+    color: #fff;
+  }
+
+  label input {
+    margin: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ffcaff    ;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  label input:placeholder-shown {
+    background-color: #fff;
+  }
+
+  .btn , .btn input{
+    background-color: #F5CA99;
+    height: 55px;
+    width: 350px;
+    border: 3px solid #F5CA99;
+    font-size: 1rem;
+    color: #fff;
+    transition: all .3s ease-in-out;
+  }
+
+  .btn input:hover {
+    background-color: #d8b287;
+  }
+
+  .btn-green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px   ;
+    background-color: #fff;
+    height: 55px;
+    width: 350px;
+    border: 3px solid #F5CA99;
+    font-size: 1rem;
+    color: #F5CA99;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+  }
+
+  .btn-green:hover {
+    background-color: #F5CA99;
+    border: 3px solid #fff;
+    color: #fff;
+  }
+
