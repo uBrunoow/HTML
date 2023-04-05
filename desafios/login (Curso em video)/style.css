@@ -1,0 +1,149 @@
+@charset "UTF-8";
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --cor1:   #bbb934;
+  --cor2: #5f2c82;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+  }
+
+  body ,html {
+
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor2);
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #login {
+    overflow: hidden;
+    background-color: #fff;
+    width: 250px;
+    height: 515px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+    transition: width .3s, height .3s ease;
+
+  }
+
+  .img {
+    display: block;
+    background: var(--cor2) url(https://media.alvanista.com/uploads/timeline_image/2016/10/20/354787_2545907250.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .forms {
+    display: block;
+    padding: 10px;
+  }
+
+  .forms h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .forms p {
+    font-size: .8em;
+    margin: 20px 0;
+  }
+
+  input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--cor1);
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #929027;
+  }
+
+  a.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    color: #979528;
+    border: 2px solid #e7e541;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a.botao:hover {
+    background-color: #fffb00;
+  }
+
+  a.botao span {
+    font-size: 1.3em;
+  }
+
+  .campo {
+    background-color: var(--cor2);
+    width: 100% ;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 2px solid var(--cor2);
+  }
+
+  .campo label {
+    display: none;
+  }
+
+  .campo span {
+    color: #fff;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+  }
+
+  .campo input {
+    background: var(--cor1);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translate(44px, -44px);
+
+  }
+
+  .campo input:focus-within {
+    background-color: #fff;
+    border: none;
+    outline: none;
+  }
