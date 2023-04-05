@@ -1,0 +1,147 @@
+ /* Google Fonts - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ :root {
+  --cor1: #A155DB;
+  --cor2: #44245C;
+  --cor3: #A156DB;
+  --cor4: #AB5AE8;
+  --cor5: #8F4CC2;
+  --cor6: #121212;
+  --cor7: #222222;
+  --cor8: #1A1A1A;
+  --cor9: #2C2C2C;
+  --cor10: #111111;
+}
+ body{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--cor6);
+ }
+ .slide-container{
+   max-width: 1120px;
+   width: 100%;
+   padding: 40px 0;
+ }
+ .slide-content{
+   margin: 0 40px;
+   overflow: hidden;
+   border-radius: 25px;
+ }
+ .card{
+   border-radius: 25px;
+   background-color: var(--cor9);
+ }
+ .image-content,
+ .card-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 0 50px 20px;
+ }
+ .image-content{
+   position: relative;
+   row-gap: 5px;
+   padding: 50px 0;
+ }
+
+ .card-image{
+   position: relative;
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   background: #FFF;
+   padding: 3px;
+ }
+
+ .name{
+   font-size: 18px;
+   font-weight: 500;
+   color: #333;
+ }
+ .description{
+   font-size: 14px;
+   color: #707070;
+   text-align: center;
+ }
+
+
+ .swiper-navBtn{
+   color: var(--cor2);
+   transition: color 0.3s ease;
+ }
+ .swiper-navBtn:hover{
+   color: var(--cor1);
+ }
+ .swiper-navBtn::before,
+ .swiper-navBtn::after{
+   font-size: 35px;
+ }
+ .swiper-button-next{
+   right: 0;
+ }
+ .swiper-button-prev{
+   left: 0;
+ }
+ .swiper-pagination-bullet{
+   background-color: var(--cor1);
+   opacity: 1;
+ }
+ .swiper-pagination-bullet-active{
+   background-color: var(--cor2);
+ }
+ 
+ .q-p {
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #9B9B9B;
+}
+
+.imagem-questions {
+width: 70px;
+height: 70px;
+background: var(--cor7);
+border-radius: 50%;
+}
+
+.user-quest {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 40px;
+}
+
+.user-infos h1 {
+font-weight: 700;
+font-size: 23px;
+line-height: 48px;
+color: #FFFFFF;
+}
+
+.user-infos p {
+  width: 80px;
+font-weight: 400;
+font-size: 13px;
+color: var(--cor1);
+}
+
+
+
+ @media screen and (max-width: 768px) {
+   .slide-content{
+     margin: 0 10px;
+   }
+   .swiper-navBtn{
+     display: none;
+   }
+ }
